@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/CSS/navbar.css">
-    <!-- <link rel="stylesheet" href="/CSS/navbar.css"> -->
     <title>Document</title>
 </head>
 <body>
 <div class="topnav">
-  <a class="active" href="http://localhost:4000/home">Home</a>
-  <a  href="http://localhost:4000/about">About</a>
-  <a href="http://localhost:4000/contact">Contact</a>
+  <a id="home-anchor" class="active" href="http://localhost:4000/home?page=home">Home</a>
+  <a id="about-anchor"  href="http://localhost:4000/about?page=about">About</a>
+  <a id="contact-anchor" href="http://localhost:4000/contact?page=contact">Contact</a>
   <div class="search-container">
     <form action="/action_page.php">
       <input id="search-inp" type="text" placeholder="Search.." name="search">
@@ -21,6 +20,7 @@
     </form>
   </div>
 </div>
-
+<script src=""></script>
+  
 </body>
 </html>

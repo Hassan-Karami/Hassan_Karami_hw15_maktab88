@@ -17,8 +17,6 @@ app.get("/home",(req,res)=>{
 )
 
 
-
-
 app.get("/about", (req, res) => {
   res.render("pages/about-page", {
     fname: "Hassan",
@@ -30,40 +28,6 @@ app.get("/contact", (req, res) => {
     fname: "Hassan",
   });
 });
-
-// productsValues.filter(x=>x.includes("kj"));
-// console.log(productsValues);
-
-
-// app.get("/search",(req,res)=>{
-//   res.render("/pages/search-page",{
-//     data:products
-//   })
-  
-
-// })
-
-
-// app.get("/search", (req, res) => {
-//    
-//   
-//   {
-//      res.render("pages/search-page", {
-//        data: products,
-//      });
- 
-//   }
- 
-// });
-
-
-// app.get("/search",(req,res)=>{
-//   res.render("/pages/search-page",{
-//     data:products
-//   })
-// })
-
-
 
 
 app.get("/search", (req, res) => {
@@ -82,6 +46,10 @@ app.get("/search", (req, res) => {
       res.render("pages/search-page", {
         data: searchedProduct,
       });
+   }
+   else {
+    res.status(404).send("Product Not Found")
+  
    }
    
 });
