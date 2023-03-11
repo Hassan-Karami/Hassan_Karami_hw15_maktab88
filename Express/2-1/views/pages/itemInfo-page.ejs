@@ -15,14 +15,18 @@
             padding: 8px 16px;
             border-radius: 10px;
             margin: 20px auto;
+            width: 30%;
             
         }
     </style>
     <title>Item Information</title>
 </head>
 <body>
+    <%- include("../partials/navbar")%>
     <div id="item-body">
-         <h3>Product Name: <span><%=data.name%></span></h3>
+   <h3><%=data.name%></h3>
+   <h3>Description:</h3>
+        <p><%=data.description%></p>
    <h3>Color: <span><%=data.color%></span></h3>
    <h3>Size: <span><%=data.size%></span></h3>
    <h3>Material: <span><%=data.material%></span></h3>
@@ -31,6 +35,5 @@
 
     </div>
   
-
 </body>
 </html>

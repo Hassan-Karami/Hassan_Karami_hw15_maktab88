@@ -3,19 +3,21 @@
     "id":1,
     "name":"Nike mercurial superfly 1",
     "color":"white-blue",
-    "material":"Synthetic leather and mesh fabric",
+    "material":"Synthetic leather of gav and mesh fabric ",
     "size":"43",
     "price":"720,000 toman",
-    "image":"/assets/images/white-blue.png"
+    "image":"/assets/images/white-blue.png",
+    "description":"This sport shoes are created by the best materials with high quality. The construction method is such that it causes air circulation in the environment of the shoe  "
 },
 {
   "id": 2,
   "name": "Nike Mercurial Superfly 2 ",
   "color": "Metallic Copper",
-  "material": "Synthetic leather and mesh fabric",
+  "material": "Synthetic leather of gav and mesh fabric",
   "size": "40",
   "price": "580,000 toman",
-  "image": "/assets/images/copper.png"
+  "image": "/assets/images/copper.png",
+  "description": "This sport shoes are created by the best materials with high quality. The construction method is such that it causes air circulation in the environment of the shoe  "
 },
 {
   "id": 3,
@@ -24,7 +26,8 @@
   "material": "Synthetic leather and mesh fabric",
   "size": "44",
   "price": "650,000 toman",
-  "image": "/assets/images/black.png"
+  "image": "/assets/images/black.png",
+  "description": "This sport shoes are created by the best materials with high quality. The construction method is such that it causes air circulation in the environment of the shoe  "
 },
 {
   "id": 4,
@@ -33,7 +36,8 @@
   "material": "Synthetic leather and mesh fabric",
   "size": "41",
   "price": "890,000 toman",
-  "image": "/assets/images/red.png"
+  "image": "/assets/images/red.png",
+  "description": "This sport shoes are created by the best materials with high quality. The construction method is such that it causes air circulation in the environment of the shoe  "
 },
 {
   "id": 5,
@@ -42,7 +46,8 @@
   "material": "Synthetic leather and mesh fabric",
   "size": "42",
   "price": "365,000 toman",
-  "image": "/assets/images/blue.png"
+  "image": "/assets/images/blue.png",
+  "description": "This sport shoes are created by the best materials with high quality. The construction method is such that it causes air circulation in the environment of the shoe  "
 },
 {
   "id": 6,
@@ -51,6 +56,7 @@
   "material": "Synthetic leather and mesh fabric",
   "size": "43",
   "price": "960,000 toman",
-  "image": "/assets/images/yellow.png"
+  "image": "/assets/images/yellow.png",
+  "description": "This sport shoes are created by the best materials with high quality. The construction method is such that it causes air circulation in the environment of the shoe  "
 }
 ]

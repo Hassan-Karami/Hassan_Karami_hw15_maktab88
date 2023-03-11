@@ -7,9 +7,6 @@ app.use(express.static("public"));
 const products = require("./DB/products-data.json");
 
 
-
-
-
 app.get("/home",(req,res)=>{
     res.render("pages/home-page",{
         data:products
@@ -18,6 +15,8 @@ app.get("/home",(req,res)=>{
 }
     
 )
+
+
 
 
 app.get("/about", (req, res) => {
@@ -32,13 +31,68 @@ app.get("/contact", (req, res) => {
   });
 });
 
+// productsValues.filter(x=>x.includes("kj"));
+// console.log(productsValues);
+
+
+// app.get("/search",(req,res)=>{
+//   res.render("/pages/search-page",{
+//     data:products
+//   })
+  
+
+// })
+
+
+// app.get("/search", (req, res) => {
+//    
+//   
+//   {
+//      res.render("pages/search-page", {
+//        data: products,
+//      });
+ 
+//   }
+ 
+// });
+
+
+// app.get("/search",(req,res)=>{
+//   res.render("/pages/search-page",{
+//     data:products
+//   })
+// })
+
+
+
+
+app.get("/search", (req, res) => {
+   let searchedText = req.query.search.toLowerCase();
+      
+      searchedProduct = products.filter((x) =>
+        JSON.stringify([
+          x.price,
+          x.size.toLowerCase(),
+          x.material.toLowerCase(),
+          x.name.toLowerCase(),
+          x.color.toLowerCase(),
+        ]).includes(searchedText)
+      );
+   if (searchedProduct.length > 0){
+      res.render("pages/search-page", {
+        data: searchedProduct,
+      });
+   }
+   
+});
+
 
 app.get("/item",(req,res)=>{
-    let selectedItem = products.find((product) => product.id === +req.query.id);
-  res.render("pages/itemInfo-page",{
+  let selectedItem = products.find((product) => product.id === +req.query.id);
+ 
+  res.render("/pages/itemInfo-page",{
      data: selectedItem
   })
 })
-
 
 app.listen(4000);
