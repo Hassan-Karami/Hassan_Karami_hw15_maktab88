@@ -1,0 +1,23 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>profile page</title>
+    </head>
+    <body>
+        <button id="logout-btn" >LOG OUT</button>
+        <%if(loggedInUser.isLoggedIn){%>)
+        <h1><%=loggedInUser.username%></h1>
+        <h1><%=loggedInUser.firstname%></h1>
+        <h1><%=loggedInUser.lastname%></h1>
+        <h1><%=loggedInUser.gender%></h1>
+        <%}%>
+
+    </body>
+    </html>
+    <script src="/JS/profile.js"></script>
+</body>
+</html>
